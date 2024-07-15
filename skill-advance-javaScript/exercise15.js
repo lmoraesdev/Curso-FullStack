@@ -17,9 +17,10 @@ de protótipos é usada até o topo (null) até encontrar (ou não) tal membro.
 function Pessoa(nome, sobronome) {
   this.nome = nome;
   this.sobronome = sobronome;
-  this.nomeCompleto = () => this.nome + ' ' + this.sobrenome;
+  Pessoa.prototype.nomeCompleto = () => {
+    this.nome + ' ' + this.sobrenome;
+  };
 }
-
 // instância
 const pessoa1 = new Pessoa('Luiz', 'O.'); // <- Pessoa = Função construtora
 const pessoa2 = new Pessoa('Maria', 'A.'); // <- Pessoa = Função construtora
