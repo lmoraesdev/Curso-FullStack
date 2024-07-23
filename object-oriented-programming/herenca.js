@@ -45,7 +45,7 @@ d1.ligar();
 d1.desligar();
 console.log(d1);
 
-const s1 = new Smartphone(' Samsung', 'Preto', 'Galaxy s24');
+const s1 = new Smartphone('Samsung', 'Preto', 'Galaxy s24');
 console.log(s1);
 
 const t1 = new Tablet('ipad', true);
